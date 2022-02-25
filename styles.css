@@ -19,15 +19,14 @@ a {
 }
 
 /* Utilizar el tag "::after" para poner los slash de separación  */
-.breadcrumb ::after {
+.breadcrumb li::after {
     content:"\002F";
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     color: black;
-
 }
 
-/* Quitar uno de los slash "\002F" */
+/* Quitar uno de los slash "\002F no hace falta, tenía dos / porque no había especificado cual de los 2 hijos afectaba" 
 .breadcrumb li::after {
     content: "";
     margin-left: 0;
